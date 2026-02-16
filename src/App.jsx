@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <Router basename="/Bridge-tech-solution">
+    <Router basename="/Bridge-tech">
       <Header />
 
       <Routes>
