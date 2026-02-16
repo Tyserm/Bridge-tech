@@ -1,0 +1,75 @@
+:root {
+  --brand-gold: gold;
+  --brand-navy: #0B1C2D;
+  --brand-light: #E6F0FA;
+  --brand-dark: #1F2933;
+}
+
+/* Header */
+.header {
+  background-color: black;
+  border-bottom: 1px solid rgba(11, 28, 45, 0.08);
+}
+
+/* Inner layout */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo + Brand */
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: auto;
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-gold);
+  letter-spacing: 0.4px;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--brand-navy);
+}
+
+/* Subtle modern hover underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--brand-gold);
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}

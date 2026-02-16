@@ -1,0 +1,68 @@
+.footer {
+  position: relative; /* NOT fixed, lets it flow with content */
+  z-index: 10; /* make sure it's above the video */
+  width: 100%;
+  background: rgba(14, 22, 40, 0.85); /* semi-transparent */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 3rem; /* spacing from last section */
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-left h4,
+.footer-right h4 {
+  margin-bottom: 0.8rem;
+  color: #ffcc00; /* highlight */
+}
+
+.footer-left p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
